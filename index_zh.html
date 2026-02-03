@@ -17,7 +17,6 @@
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   </script>
 
-  <!-- For all browsers -->
   <link rel="stylesheet" href="assets/css/main.css">
   <meta http-equiv="cleartype" content="on">
   <link rel="manifest" href="images/site.webmanifest">
@@ -30,7 +29,6 @@
 </head>
 
 <body>
-  <!-- 网页引入mathjax，latex -->
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
       showProcessingMessages: false,
@@ -66,7 +64,7 @@
             <li class="masthead__menu-item"><a href="index_zh.html#-news">新闻</a></li>
             <li class="masthead__menu-item"><a href="index_zh.html#-educations">教育经历</a></li>
             <li class="masthead__menu-item"><a href="index_zh.html#-publications">科研经历</a></li>
-            <li class="masthead__menu-item"><a href="index_zh.html#-honors-and-awards">荣誉与奖励</a></li>
+            <li class="masthead__menu-item"><a href="index_zh.html#-honors-and-awards">荣誉奖项</a></li>
             <li class="masthead__menu-item"><a href="index.html">English</a></li>
           </ul>
           <ul class="hidden-links hidden"></ul>
@@ -86,19 +84,13 @@
         <div class="author__content" style="text-align: center">
           <h3 class="author__name">杨博学</h3>
           <p class="author__bio">上海交通大学</p>
-          <p class="author__bio">计算机学院 软件工程</p>
         </div>
 
         <div class="author__urls-wrapper">
           <ul class="author__urls social-icons">
-            <li>
-              <!-- 简单的个人标签/状态 -->
-              <div style="white-space: normal; margin-bottom: 1em; font-size: 0.9em;">
-                <b>GPA:</b> 92.5/100 (Top 1%)<br>
-                <b>Rank:</b> 5/88<br>
-                <b>Status:</b> 已保研至 SJTU 计算机直硕
-              </div>
-            </li>
+            <!-- <li>
+              <div style="white-space: normal; margin-bottom: 1em;">专注于人工智能与深度学习的帅气年轻人.</div>
+            </li> -->
             <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> 上海，中国</li>
             <li><a href="https://github.com/BoxueYang"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a>
             </li>
@@ -155,44 +147,17 @@
 
           <h1 id="-publications">📝 科研经历</h1>
 
-          <!-- EvoStreaming -->
-          <div class="paper-box">
-            <div class="paper-box-image">
-              <div>
-                <div class="badge">ICML 2026 (Under Review)</div>
-                <!-- 请替换为你的项目图片，例如 images/evostreaming.png -->
-                <img src="images/evostreaming_placeholder.png" alt="EvoStreaming" width="100%"
-                  onerror="this.src='https://via.placeholder.com/300x150?text=EvoStreaming'" />
-              </div>
-            </div>
-            <div class="paper-box-text">
-              <p>
-                <strong>EvoStreaming: Your Offline Video Model Is a Natively Streaming Assistant</strong>
-                <br />
-                <strong>Boxue Yang (First Author)</strong>, et al.
-              </p>
-              <ul>
-                <li><strong>Under Review at ICML 2026</strong>.</li>
-                <li>针对现有视频大模型缺乏实时交互能力的问题，提出了一种无需修改模型架构即可激活流式视频理解能力的新范式。</li>
-                <li>构建了首个将流式视频理解建模为帧级多轮对话的评估框架 (RealStreamEval)。</li>
-                <li>设计了零人工标注的自进化数据生成管线 (EvoStreaming)，仅需 1k 条数据即可激活流式能力，性能提升 10.8%。</li>
-              </ul>
-            </div>
-          </div>
-
           <!-- Innovator-VL -->
           <div class="paper-box">
             <div class="paper-box-image">
               <div>
-                <div class="badge">Project Lead</div>
-                <!-- 请替换为你的项目图片 -->
-                <img src="images/innovator_placeholder.png" alt="Innovator-VL" width="100%"
-                  onerror="this.src='https://via.placeholder.com/300x150?text=Innovator-VL'" />
+                <div class="badge">Tech Report</div>
+                <img src="images/Innovator-VL.png" alt="Innovator-VL" width="100%" />
               </div>
             </div>
             <div class="paper-box-text">
               <p>
-                <a href="https://github.com/InnovatorLM/Innovator-VL">
+                <a href="https://arxiv.org/pdf/2601.19325">
                   <strong>Innovator-VL: A Multimodal Large Language Model for Scientific Discovery</strong>
                 </a>
                 <br />
@@ -203,8 +168,30 @@
               </p>
               <ul>
                 <li>主导研发专为科学领域设计的多模态大模型，开源了 Instruct 与 Thinking (CoT) 版本。</li>
-                <li>构建了全流程透明、端到端可复现的训练流水线，使用少于 500万条高质量数据达到 SOTA 水平。</li>
+                <li>构建了全流程透明、端到端可复现的训练流水线，使用少于500万条高质量数据达到 SOTA 水平。</li>
                 <li>针对 Thinking 模型引入 GSPO 算法，推理效率提升显著。项目获 100+ Stars。</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- EvoStreaming -->
+          <div class="paper-box">
+            <div class="paper-box-image">
+              <div>
+                <div class="badge">ICML 2026 (Under Review)</div>
+                <img src="images/EvoStreaming.png" alt="EvoStreaming" width="100%" />
+              </div>
+            </div>
+            <div class="paper-box-text">
+              <p>
+                <strong>EvoStreaming: Your Offline Video Model Is a Natively Streaming Assistant</strong>
+                <br />
+                <strong>Boxue Yang (First Author)</strong>, et al.
+              </p>
+              <ul>
+                <li>针对现有视频大模型缺乏实时交互能力的问题，提出了一种无需修改模型架构即可激活流式视频理解能力的新范式。</li>
+                <li>构建了首个将流式视频理解建模为帧级多轮对话的评估框架 (RealStreamEval)。</li>
+                <li>设计了零人工标注的自进化数据生成管线 (EvoStreaming)，仅需 1k 条数据即可激活流式能力，OVOBench 性能提升 10.8%。</li>
               </ul>
             </div>
           </div>
@@ -213,10 +200,8 @@
           <div class="paper-box">
             <div class="paper-box-image">
               <div>
-                <div class="badge">arXiv 2025</div>
-                <!-- 请替换为你的项目图片 -->
-                <img src="images/ai4service_placeholder.png" alt="AI4Service" width="100%"
-                  onerror="this.src='https://via.placeholder.com/300x150?text=AI+for+Service'" />
+                <div class="badge">Tech Report</div>
+                <img src="images/AI4Service.png" alt="AI4Service" width="100%" />
               </div>
             </div>
             <div class="paper-box-text">
@@ -227,7 +212,6 @@
                 <br />
                 <strong>Boxue Yang (Core Contributor & First Author)</strong>, et al.
                 <br />
-                <a href="https://arxiv.org/pdf/2510.14359">[arXiv]</a>
               </p>
               <ul>
                 <li>提出 "AI for Service" 新范式，构建基于第一人称视频流的主动服务系统。</li>
@@ -242,19 +226,16 @@
             <div class="paper-box-image">
               <div>
                 <div class="badge">ICML 2026 (Under Review)</div>
-                <!-- 请替换为你的项目图片 -->
-                <img src="images/graph_placeholder.png" alt="Graph Learning" width="100%"
-                  onerror="this.src='https://via.placeholder.com/300x150?text=Robust+Graph'" />
+                <img src="images/Graph Learning.png" alt="Graph Learning" width="100%" />
               </div>
             </div>
             <div class="paper-box-text">
               <p>
                 <strong>Robust Graph Representation Learning via Adaptive Spectral Contrast</strong>
                 <br />
-                Zhuolong Li, <strong>Boxue Yang (Second Author)</strong>, Haopeng Chen*
+                Zhuolong Li, <strong>Boxue Yang</strong>, Haopeng Chen
               </p>
               <ul>
-                <li><strong>Under Review at ICML 2026</strong>.</li>
                 <li>首创面向图对比学习的谱对抗训练框架，通过构建编码器-对抗器的极小极大博弈优化学习目标。</li>
                 <li>设计双通道自适应谱滤波器与创新投影梯度攻击（PGD），在9个基准上分类准确率平均提升2.82%。</li>
                 <li>显著提升了模型对投毒攻击和噪声扰动的鲁棒性。</li>
@@ -262,7 +243,7 @@
             </div>
           </div>
 
-          <h1 id="-honors-and-awards">🎖 荣誉与奖项</h1>
+          <h1 id="-honors-and-awards">🎖 荣誉奖项</h1>
 
           <h3>竞赛奖项</h3>
           <ul>
